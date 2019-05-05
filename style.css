@@ -46,14 +46,14 @@ body {
   100%  { background-color: #ccc; }
 }
 
-#submit {
+#blog {
     margin-top: 60px;
     margin-left: 140px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 47px;
     background-color: white;
     border: none;
     border-radius: 4px;
@@ -64,12 +64,38 @@ body {
     text-decoration: none;
 }
 
-#submit:focus {
+#project {
+    margin-top: 60px;
+    margin-left: 140px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 47px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    position: fixed;
+    color: black;
+    font-size: 150%;
+    font-family:sans-serif; 
+    text-decoration: none;
+}
+
+#blog:focus  {
     box-shadow: none;
 }
 
-#submit:hover {
-     background: grey;  
+#blog:hover {
+     background: #F4D03F;  
+}
+
+#project:focus  {
+    box-shadow: none;
+}
+
+#project:hover {
+     background: #F4D03F;  
 }
 
 .btn1-section {
