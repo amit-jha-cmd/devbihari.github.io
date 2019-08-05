@@ -1,22 +1,48 @@
 <html>	
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Home</title>
 	</head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="./bootstrap.css">	 -->
+	<link rel="stylesheet" type="text/css" href="./src/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./src/style.css">	
 	<body>
-		<div class="container">
-			<p>@Devbihari: <span class="typed-text"></span>
-				<span class="cursor">&nbsp;</span></p><br>
-		</div>
-		<div class="btn1-section">
-				<a id="project" href="https://devbihari.github.io/projects.html">Projects</a>
-				<a id="blog" href="https://techinhurry.wordpress.com/" style="margin-left: 5px;">Blog</a>
-		</div>
-		<!-- <div class="btn2-section">
-				
-		</div> -->
+		<div class="user-orientation">
+			<div class="card user-card">
+				<img src="./public/svg/workingman.svg" class="card-img-top user-intro-img" alt="...">
+				<div class="card-body">
+					<h1 class="card-title">About me</h1><hr>
+					<p>
+						Hey There! My name is Amit Jha. I consider myself
+						the <b>Phunsuk Vangadu</b> of <i>Web Development</i> 
+						and <i>Data Science</i>.<br>
+						No no, don't get me wrong, I'm no where as good as
+						the actual guy but I share the same enthusiasm and
+						curiosity towards my field of interests as <b>Mr. Phunsuk</b>
+						has for learning new things.
+						<div>
+							<a href="#" class="card-link">More about me</a>
+							<a href="#" class="card-link">GitHub</a>
+							<a href="./src/blog/index.html" class="card-link">Blog</a>
+						</div>					
+					</p>
+				</div>
+			</div>
+	
+			<div class="card user-card">
+				<img src="./public/svg/build.svg" class="card-img-top user-intro-img-project" alt="...">
+				<div class="card-body">
+					<h1 class="card-title">Projects</h1><hr>
+					<a class="btn btn-light btn-lg btn-block">Data Science</a>
+					<a class="btn btn-light btn-lg btn-block">Web Development</a>
+					<a class="btn btn-light btn-lg btn-block">Desktop Application</a>
+				</div>
+			</div>
 
-		<script src="style.js"></script>
+			<div class="user-navbar">
+				<a class="btn btn-light user-btn">Contact me</a>
+			</div>
+		</div>
 	</body>
 </html>
