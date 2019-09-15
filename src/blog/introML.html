@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap.css">
+
+<body>
+    <nav aria-label="breadcrumb" style="position: fixed; width: 100%;">
+        <ol class="breadcrumb" style="background-color: #F7DC6F ">
+            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="./index.html">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Introduction to ML</li>
+        </ol>
+    </nav>
+    <div class="card-body user-blog-card">
+        <div class="user-blog-content" style="margin-top: 40px;">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Introduction to Machine learning</h1>
+                    <p class="lead">Author: Amit Jha | Sep 14th, 2019</p>
+                    <p>
+                        <i>A lot of course teach machine learning online but none of them teach machine learning the way
+                            a beginner should be taught.
+                            Most of the courses extensively talk about the mathematical constructs from day one without
+                            giving time to the new learning
+                            to settle in and get a hang of it.</i>
+                    </p>
+                </div>
+
+            </div>
+            <p>
+                In this blog post I'll teach machine learning the way a beginner should be taught. So let's get
+                started...
+            </p>
+            <p>
+                There are only 4 steps in any machine learning implementation
+                <ul>
+                    <li>Hypothesis</li>
+                    <li>Prediction</li>
+                    <li>Cost function</li>
+                    <li>Model Training</li>
+                </ul>
+                We will discuss each of them below
+            </p>
+            <hr>
+            <h2>Hypothesis</h2>
+            <p>
+                <i>A hypothesis is a proposed explanation for a phenomenon</i><br><br>
+                A quick Google search gave me this definition of <b>Hypothesis</b>. A <i>proposed explanation?</i>Hmmm,
+                what does that has to do with machine
+                learning? Well, in machine learning we have data(we only talk about csv files here, csv files are
+                similar to excel sheets) which should follow
+                some mathematical equation(assumption, we propose that it does). This mathematical function is what we
+                call a <b>Hypothesis</b> of a model.
+            </p>
+            <p>
+                <b>Not clear with hypothesis yet?</b> Let's look at an example:<br>
+                consider this data<br><br>
+                <div class="user-content">
+                    <img src="../../public/images/blog/datapoints.png">
+                </div><br><br>
+                Here, as you can see, we have 2 columns representing years of experience and the respective salary of
+                the employee.
+                In ML one row of such data is called a datapoint. Now if we were to plot a scatter plot of this data we
+                would get something
+                like this<br><br>
+                <div class="user-content">
+                    <img src="../../public/images/blog/plot.png">
+                </div><br><br>
+                Do you see a pattern? I bet you do. This graph loosly resembles a straight line, doesn't it? Now here we
+                propose that
+                this data resembles a straight line. This straight line is our <i>hypothesis</i>.
+                <br><b>That is, we assume that a model
+                    based on this straight line can predict values from future datapoint that might appear in this
+                    dataset.</b><br>
+                So, let's draw a line<br>
+                <div class="user-content">
+                    <img src="../../public/images/blog/lineplot.png">
+                </div><br><br>
+                <h3><b>This line is a hypothesis for a linear regression model</b></h3>
+            </p>
+            <hr>
+            <p>
+                <h2>Prediction</h2>
+                <i>Now we use the above discussed hypothesis to do prediction</i><br><br>
+                <b>But how?</b><br>
+                <p>
+                    Let's talk a bit about maths here<br>
+                    A straight line is represented as y = mx + c. Here, m is the slop of the line, c is the y-intercept,
+                    x
+                    is
+                    the dependent
+                    variable and y is what we get when we plug in the value of m, c and x. Now, if I were to ask you to
+                    draw
+                    a straight line
+                    on this scatter plot your would probably try to find the best value of m and c so draw this line.
+                    That's
+                    exactly what a computer
+                    does. To begin with, the computer chooses a random value of m and c and then feed in x ( which in
+                    this
+                    case is years of experience).
+                    These three values gives us y which is out prediction from this <i>proposed</i> model based on a
+                    straight line.
+                </p>
+            </p><hr>
+            <p>
+                <h2>Cost Function</h2>
+                <i>How does the computer know whether to increase the value of m or decrease the value of c to get the best fit line?</i>
+                <br><br>
+                <p>
+                    This is where things become interesting. 
+                </p>
+            </p>
+            <h1 style="color: red">Incomplete: Stay tuned...</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 /* Mobile version */
 body, html {
-  background: #D5D8DC;
+  background: whitesmoke;
 }
 
 .user-card{
@@ -73,9 +73,17 @@ body, html {
   justify-content: center;
 }
 
+.user-content img {
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  margin-left: -10px;
+}
+
+
 @media only screen and (min-width: 768px){
   body, html {
-    background: #D5D8DC;
+    background: white;
     font-size: 100%;
   }
   .user-card{
@@ -110,6 +118,28 @@ body, html {
     display: flex;
     align-content: center;
     justify-content: center;
+  }
+
+  .user-blog-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .user-content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .user-blog-content {
+    width: 70%;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .user-content img {
+    min-width: 10%;
   }
   
 }
