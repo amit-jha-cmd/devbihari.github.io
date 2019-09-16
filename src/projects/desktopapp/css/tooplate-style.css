@@ -49,6 +49,36 @@ p {
 	padding: 330px 0px 0% 0px;
 }
 
+.user-banner img {
+	display: none;
+}
+
+.user-banner div {
+	position: relative;
+}
+
+.user-banner {
+	padding-top:170px
+} 	
+
+@media only screen and (min-width: 768px){
+
+	.user-banner {
+		padding-top: 0px;
+	}
+
+	.user-banner img {
+		width: 40%;
+		float: right;
+	}
+
+	.user-banner div {
+		position: absolute;
+	}
+}
+
+
+
 .first-section .text-content {
 	text-align: right;
 	color: #fff;
