@@ -104,6 +104,8 @@ body, html {
     display: flex;
     align-content: center;
     justify-content: center;
+    /* border: 1px solid black; */
+    margin-top: 30px;
   }
 
   .user-card-blog {
@@ -140,6 +142,40 @@ body, html {
 
   .user-content img {
     min-width: 10%;
+  }
+
+  .head {
+    /* background: #F7DC6F;  */
+    background: linear-gradient(to right, rgb(25, 88, 131), rgb(3, 122, 99));
+    display: flex; 
+    align-content: center; 
+    justify-content: center; 
+    text-align: right;
+    height: 380px;
+  }
+
+  .head-content {
+    width: 70%;
+    /* display: flex; */
+    /* border: 1px solid black; */
+    margin-top: 50px;
+  }
+
+  .head-content img {
+    width: 270px; 
+    border-radius: 10px; 
+    /* margin: 5% 50px -80px 50px;  */
+    box-shadow: 0px 0px 2px; 
+    float: right;
+  }
+
+  .head-content h1 {
+    margin-right: 350px;
+    margin-top: 130px; 
+    font-size: 410%; 
+    font-weight: 900; 
+    text-transform: uppercase;
+    color: white;
   }
   
 }
