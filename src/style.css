@@ -3,12 +3,24 @@ body, html {
   background: rgb(8, 8, 8);
 }
 
+* {
+  color: white;
+}
+
+.experience::-webkit-scrollbar {
+   display: none;
+ }
+
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
 .user-card{
   margin-left: 2.5%;
   margin-top: 30px;
   margin-bottom: 20px;
   color: rgb(230, 230, 230);
-  background-color: rgb(22, 22, 22);
+  background-color: #161616;
   width: 95%;
 }
 
@@ -18,9 +30,44 @@ body, html {
   margin-top: 30px;
 }
 
+.sec-2 {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#exp {
+  /* width: %; */
+  /* border: 1px solid green; */
+  border-radius: 5px;
+  background-color: #161616;
+  /* height: 100vh; */
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  padding: 20px;
+  margin: 15px;
+}
+
+
+#sub-sec {
+  /* width: %; */
+  /* border: 1px solid green; */
+  border-radius: 5px;
+  background-color: #161616;
+  /* height: 100vh; */
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  padding: 20px;
+  margin: 15px;
+}
+
 .user-orientation {
   display: block;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .user-navbar {
@@ -129,7 +176,7 @@ body, html {
   width: 250px
 }
 
-
+/* DESKTOP */
 @media only screen and (min-width: 768px){
   body, html {
     background: rgb(8, 8, 8);
@@ -142,7 +189,7 @@ body, html {
     margin-bottom: 20px;
     color: rgb(230, 230, 230);
     background-color: rgb(22, 22, 22);
-    width: 500px;
+    width: 100%;
   }
   
   .user-intro-img-project {
@@ -230,9 +277,46 @@ body, html {
   }
 
   .head-banner {
-    /* border: 1px solid black; */
+    /* border: 1px solid rgb(240, 240, 240); */
     position: relative;
     width: 500px;
+  }
+
+  .sec-2 {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: row;
+  }
+
+  #exp {
+    /* width: %; */
+    /* border: 1px solid green; */
+    border-radius: 5px;
+    background-color: #161616;
+    width: 60%;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  
+  #sub-sec {
+    /* width: %; */
+    /* border: 1px solid green; */
+    border-radius: 5px;
+    background-color: #161616;
+    height: 100vh;
+    width: 40%;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    padding: 20px;
+    margin: 15px;
   }
   
 }
