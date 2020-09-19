@@ -272,8 +272,11 @@ body, html {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+    text-align: left;
+    /* border: 1px solid green; */
     bottom: 50px;
-    right: 230px;
+    width: 300px;
+    left: -20px;
   }
 
   .head-banner {
