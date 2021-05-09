@@ -1,0 +1,310 @@
+:root {
+    --border-color: #f0f0f0;
+    --padding-5: 5px;
+    --padding-10: 10px;
+    --padding-20: 20px;
+    --padding-30: 30px;
+    --text-color: #575757;
+    --background-color: rgb(67, 99, 133);
+    --card-color: white;
+  }
+  
+
+
+  
+body {
+    background-color: var(--background-color);
+    border-radius: 10px
+}
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    background-color: transparent;
+    width: 800px;
+    height: 500px;
+    max-width: 800px;
+    /* min-width: 550px; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card:hover {
+    cursor: pointer;
+}
+
+.label-card-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.468);
+    font-weight: 100;
+    transform: translateX(-50%);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/* .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+/* .flip-card-front {
+} */
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--card-color);
+  border-radius: 10px;
+  padding: var(--padding-10);
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+  transform: rotateY(180deg);
+} 
+
+.flip-card-back #main-back-div {
+    width: 100%;
+    height: 100%;
+    font-weight: 100;
+    padding: var(--padding-10);
+}
+
+.client {
+    display: none;
+}
+
+#main-back-div * {
+    font-weight: 100;
+}
+
+#main-back-div .content-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    border-right: 1px solid var(--border-color);
+}
+
+.skill-container {
+    border-top: 1px solid var(--border-color);
+    margin: var(--padding-10);
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.flip-card-back #row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playback-controller {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-custm {
+    color: var(--text-color);
+    font-weight: 100;
+    font-size: 100px;
+}
+
+.lil-tile {
+    margin: var(--padding-5);
+    padding: var(--padding-10);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.more-details p{
+    font-size: 21px;
+}
+
+.c-modal {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 800px;
+    max-width: 800px;
+    /* min-width: 550px; */
+    height: 500px;
+    border-radius: var(--padding-10);
+    padding: var(--padding-20);
+    background: var(--card-color);
+}
+
+.c-modal .c-title {
+    float: right;
+    text-align: right;
+}
+
+.c-title .skills-short {
+    position: absolute; 
+    width: 300px;
+    margin: var(--padding-30); 
+    bottom: 40%;
+    right: -10px;
+    transform: translateY(50%);
+}
+
+.c-title * {
+    font-weight: lighter;
+    margin: 2px;
+}
+
+.c-modal img {
+    position: absolute;
+    bottom: 20px;
+    left: -30px;
+    width: 360px;
+}
+
+.border {
+    border: 1px solid var(--border-color);
+}
+
+.padding {
+    padding: var(--padding-10);
+}
+
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.link-footer {
+    position: absolute;
+    bottom: var(--padding-10);
+    right: var(--padding-10);
+}
+
+.stats {
+    background: #f2f5f8 !important;
+    color: #000 !important
+}
+
+.articles {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number1 {
+    font-weight: 500
+}
+
+.followers {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number2 {
+    font-weight: 500
+}
+
+.rating {
+    font-size: 10px;
+    color: #a1aab9
+}
+
+.number3 {
+    font-weight: 500
+}
+
+@media only screen and (max-width: 610px) {
+    .c-modal img {
+        width: 210px;
+        bottom: 10px;
+        /* display: none; */
+    }
+
+     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+        position: fixed;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+        background-color: transparent;
+        width: 300px;
+        height: 500px;
+        max-width: 800px;
+        /* min-width: 550px; */
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    .c-modal {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 300px;
+        height: 500px;
+        border-radius: var(--padding-10);
+        padding: var(--padding-20);
+        background: var(--card-color);
+    }
+
+
+    .c-title .skills-short {
+        position: absolute; 
+        width: 300px;
+        margin: var(--padding-30); 
+        bottom: 60%;
+        right: -10px;
+        transform: translateY(50%);
+    }
+
+    .skill-container {
+        visibility: hidden;
+    }
+
+    .flip-card-back {
+        background-color: var(--card-color);
+        border-radius: 10px;
+        padding: var(--padding-10);
+        display: flex;
+          flex-direction: row;
+          justify-content: center;
+        transform: rotateY(180deg);
+      } 
+
+    .flip-card-back #main-back-div {
+        width: 100%;
+        height: 100%;
+        font-weight: 100;
+        padding: var(--padding-10);
+    }
+
+    .client {
+        display: none;
+    }
+
+    .more-details p{
+        font-size: 17px;
+    }
+  }
