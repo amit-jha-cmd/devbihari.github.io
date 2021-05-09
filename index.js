@@ -16,7 +16,7 @@ window.addEventListener('click', function(e){
         bottom_label.style.display = 'none';
         setTimeout(() => {
             front_div.style.display = 'none';
-        }, 300);
+        }, 250);
         
     } else {
         card_inner.style.transform = 'rotateY(0deg)';
