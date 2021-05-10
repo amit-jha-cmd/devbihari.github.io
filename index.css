@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 300px;
         height: 500px;
         border-radius: var(--padding-10);
-        padding: var(--padding-10);
+        padding: var(--padding-30);
         background: var(--card-color);
     }
 
