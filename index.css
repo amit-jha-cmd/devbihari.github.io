@@ -5,24 +5,28 @@
     --padding-20: 20px;
     --padding-30: 30px;
     --text-color: #575757;
-    --background-color: rgb(67, 99, 133);
+    --background-color: #436385;
     --card-color: white;
+    --box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
   
 
-
-  
 body {
     background-color: var(--background-color);
     border-radius: 10px
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     bottom: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); */
+    margin-top: var(--padding-30);
     background-color: transparent;
     width: 800px;
     height: 400px;
@@ -32,22 +36,90 @@ body {
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
+
 #sec-1 {
-    position: fixed;
+    /* position: fixed; */
     /* left: -100%; */
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
-    height: 100%;
+    height: 630px;
+    /* border: 1px solid red; */
     transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #sec-2 {
-    position: fixed;
-    left: -100%;
-    bottom: 0;
     width: 100%;
-    height: 100%;
+    /* height: 40vh; */
     transition: all 1s;
+    display: flex;
+    padding: 0px 30px 30px 30px;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+#sec-2 h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.client-signature {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.client-card {
+    border-radius: var(--padding-10);
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    width: 400px;
+    margin: var(--padding-20);
+    /* height: 150px; */
+    position: relative;
+    padding: var(--padding-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-logo {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    /* background: white; */
+    border-radius: 50%;
+    top: -25px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-logo img {
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.client-card .client-comment {
+    margin-top: 30px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: right;
+    padding: var(--padding-10);
 }
 
 .flip-card:hover {
@@ -270,10 +342,10 @@ body {
 
      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
     .flip-card {
-        position: fixed;
+        /* position: fixed;
         left: 50%;
         bottom: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%); */
         background-color: transparent;
         width: 300px;
         height: 500px;
@@ -282,12 +354,24 @@ body {
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
     }
 
+    #sec-1 {
+        /* position: fixed; */
+        /* left: -100%; */
+        /* bottom: 0; */
+        width: 100%;
+        height: 620px;
+        transition: all 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .c-modal {
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         width: 300px;
         height: 500px;
         border-radius: var(--padding-10);
-        padding: var(--padding-20);
+        padding: var(--padding-10);
         background: var(--card-color);
     }
 

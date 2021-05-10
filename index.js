@@ -50,12 +50,11 @@ window.addEventListener('resize' ,() => {
     
 })
 
-card.addEventListener('swiped-up', (e) => {
+view_client_btn.addEventListener('click', (e) => {
     clients_visible = !clients_visible;
-    console.log('worked');
     if(clients_visible){
         view_client_btn.innerHTML = "Hide Clients";
-        card.style.transform = "translate(-50%, 40%)";
+        card.style.transform = "translate(-50%, 50%) scale(.6)";
     } else {
         view_client_btn.innerHTML = "View Clients";
         card.style.transform = "translate(-50%, 50%)";
