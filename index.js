@@ -37,18 +37,18 @@ window.addEventListener('click', function(e){
     }
   });
 
-window.addEventListener('resize' ,() => {
-    var width = window.innerWidth;
-    var card_width = front_div.offsetWidth;
-    if(card_width + offset > width){
-        front_div.style.width = (card_width - (card_width + offset - width)).toString() + "px";
-        card.style.width = (card_width - (card_width + offset - width)).toString() + "px";
-    } else {
-        front_div.style.width = (card_width + Math.abs(card_width + offset - width)).toString() + "px";
-        card.style.width = (card_width + Math.abs(card_width + offset - width)).toString() + "px";
-    }
+// window.addEventListener('resize' ,() => {
+//     var width = window.innerWidth;
+//     var card_width = front_div.offsetWidth;
+//     if(card_width + offset > width){
+//         front_div.style.width = (card_width - (card_width + offset - width)).toString() + "px";
+//         card.style.width = (card_width - (card_width + offset - width)).toString() + "px";
+//     } else {
+//         front_div.style.width = (card_width + Math.abs(card_width + offset - width)).toString() + "px";
+//         card.style.width = (card_width + Math.abs(card_width + offset - width)).toString() + "px";
+//     }
     
-})
+// })
 
 view_client_btn.addEventListener('click', (e) => {
     clients_visible = !clients_visible;
