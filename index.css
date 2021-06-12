@@ -37,6 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
+.spotify {
+    width: 70%;
+    max-width: 700px;
+    min-width: 550px;
+}
+
 
 #sec-1 {
     /* position: fixed; */
@@ -351,6 +357,13 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 700px;
         min-width: 300px;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+
+    .spotify {
+        width: 300px;
+        max-width: 700px;
+        min-width: 300px;
     }
 
     #sec-1 {
