@@ -82,9 +82,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .client-signature {
-    position: absolute;
-    top: 15px;
-    left: 30px;
+    /* position: absolute; */
+    padding: var(--padding-10);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.133);
     font-size: 16px;
     font-weight: 500;
 }
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     /* height: 150px; */
     position: relative;
     padding: var(--padding-10);
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .client-card .client-comment {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-style: italic;
     font-weight: 100;
     text-align: justify;
-    padding: var(--padding-10);
+    padding: 0 var(--padding-10);
 }
 
 .flip-card:hover {
